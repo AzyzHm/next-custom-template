@@ -29,7 +29,7 @@
     "react-dom": "^19.2.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.19.0",
+    "@eslint/js": "^10.0.1",
     "@next/eslint-plugin-next": "^16.3.0",
     "@playwright/test": "^1.50.0",
     "@tailwindcss/postcss": "^4.0.0",
