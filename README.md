@@ -68,6 +68,15 @@ next-custom-template/
 
 ## Getting Started
 
+### Prerequisites
+
+- Node.js **>= 20.9.0** (required by Next.js 16)
+- After `npm install`, download the Playwright browser binary (one-time, per machine):
+
+```bash
+  npx playwright install chromium
+```
+
 ### 1. Clone and install dependencies
 
 ```bash

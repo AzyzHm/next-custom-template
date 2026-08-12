@@ -38,6 +38,9 @@ This template keeps three isolated test tiers:
 | Integration | `tests/integration` | Vitest + MSW                   | Route handlers, the API client, components wired to mocked network calls |
 | E2E         | `tests/e2e`         | Playwright                     | Full user flows against a real running build                             |
 
+> First time running e2e tests on a machine? Playwright needs its browser binary downloaded
+> separately from `npm install`: run `npx playwright install chromium` once.
+
 Run them locally:
 
 ```bash
