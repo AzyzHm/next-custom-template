@@ -32,11 +32,11 @@ Thanks for considering a contribution to this project! The steps below will get 
 
 This template keeps three isolated test tiers:
 
-| Tier | Location | Tooling | What belongs here |
-| --- | --- | --- | --- |
-| Unit | `tests/unit` | Vitest + React Testing Library | Pure functions, hooks, isolated components |
-| Integration | `tests/integration` | Vitest + MSW | Route handlers, the API client, components wired to mocked network calls |
-| E2E | `tests/e2e` | Playwright | Full user flows against a real running build |
+| Tier        | Location            | Tooling                        | What belongs here                                                        |
+| ----------- | ------------------- | ------------------------------ | ------------------------------------------------------------------------ |
+| Unit        | `tests/unit`        | Vitest + React Testing Library | Pure functions, hooks, isolated components                               |
+| Integration | `tests/integration` | Vitest + MSW                   | Route handlers, the API client, components wired to mocked network calls |
+| E2E         | `tests/e2e`         | Playwright                     | Full user flows against a real running build                             |
 
 Run them locally:
 

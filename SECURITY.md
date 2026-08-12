@@ -7,7 +7,7 @@ branch is maintained, there are no versioned releases to track.
 
 | Branch | Supported |
 | ------ | --------- |
-| `main` | ✅ |
+| `main` | ✅        |
 
 ## Reporting a Vulnerability
 

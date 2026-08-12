@@ -1,7 +1,7 @@
 ![Next Custom Template Banner](public/banner.png)
 
 <p align="center">
-  <img alt="Next.js" src="https://img.shields.io/badge/Next.js-15-000000?style=for-the-badge&logo=next.js&logoColor=white" />
+  <img alt="Next.js" src="https://img.shields.io/badge/Next.js-16-000000?style=for-the-badge&logo=next.js&logoColor=white" />
   <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
   <img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
   <img alt="Vitest" src="https://img.shields.io/badge/Vitest-3-6E9F18?style=for-the-badge&logo=vitest&logoColor=white" />
@@ -16,7 +16,7 @@ typed API layer, test-covered, and CI-ready out of the box.
 
 ## Features
 
-- **Next.js 15** with the **App Router**, React 19, and TypeScript in strict mode
+- **Next.js 16** with the **App Router**, React 19.2, and TypeScript in strict mode (Turbopack by default)
 - **Tailwind CSS 4** for styling
 - **Typed API layer**: Route Handlers under `src/app/api` + a typed `fetch` client in `src/lib/api-client.ts`
 - **Clear separation of concerns**: UI (`src/components`) / cross-cutting logic (`src/lib`) / shared types (`src/types`) / API routes (`src/app/api`)
@@ -132,11 +132,11 @@ Every push and pull request to `main` triggers `.github/workflows/ci.yml`, which
 
 A typical new page or API resource (e.g. `Product`) touches these layers:
 
-1. `src/app/<route>/page.tsx`  the page itself (if it needs a UI)
-2. `src/app/api/v1/products/route.ts`  Route Handler(s) for the resource
-3. `src/types/product.ts`  types for the resource (or add to `src/types/index.ts` if shared)
-4. `src/lib/api-client.ts` usage  call the new endpoint from the frontend via `apiClient`
-5. `src/components/`  any resource-specific UI components
+1. `src/app/<route>/page.tsx` the page itself (if it needs a UI)
+2. `src/app/api/v1/products/route.ts` Route Handler(s) for the resource
+3. `src/types/product.ts` types for the resource (or add to `src/types/index.ts` if shared)
+4. `src/lib/api-client.ts` usage call the new endpoint from the frontend via `apiClient`
+5. `src/components/` any resource-specific UI components
 6. Tests under `tests/unit`, `tests/integration`, and (for full user flows) `tests/e2e`
 
 ## Contributing
